@@ -18,6 +18,7 @@ BiocManager::install(c("BiocParallel", "DESeq2", "scran", "celldex",
                        "glmGamPoi", "SingleR"))
 # Install packages from GitHub
 remotes::install_github('chris-mcginnis-ucsf/DoubletFinder')
+RUN R -e 'devtools::install_github("immunogenomics/presto")'
 ```
 Commands Used to build the container:
 ```
